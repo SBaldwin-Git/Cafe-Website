@@ -7,16 +7,22 @@
 
 header{
     text-align: center;
+    background-color: honeydew;
+    opacity: 0.6;
+    height: 20%;
+}
+
+header h1{
+    padding-top: 2%;
+    font-family: 'Gamaliya';
+    font-size: 80px;
+    text-decoration: underline;
 }
 
 @font-face {
     font-family: 'Gamaliya';
     src: url('res/Gamaliya-JRBYa.ttf');
     font-style: normal;
-}
-
-.cafeName{
-    font-family: 'Gamaliya';
 }
 
 body{
