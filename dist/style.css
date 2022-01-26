@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+header{
+    text-align: center;
+}
+
 @font-face {
     font-family: 'Gamaliya';
     src: url('res/Gamaliya-JRBYa.ttf');
