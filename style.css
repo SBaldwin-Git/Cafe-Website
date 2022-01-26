@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Gamaliya';
+    src: url('res/Gamaliya-JRBYa.ttf');
+    font-style: normal;
+}
+
+.cafeName{
+    font-family: 'Gamaliya';
+}
+
+body{
+    background-image: url(res/pexels-afta-putta-gunawan-683039.jpg);
+    background-size: contain;
+}
