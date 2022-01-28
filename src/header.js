@@ -1,5 +1,5 @@
 function createHeader() {
-    const contentContainer = document.querySelector('#content');
+    const body = document.querySelector('body');
     const header = document.createElement('header');
     const shopHeader = document.createElement('h1');
 
@@ -10,7 +10,8 @@ function createHeader() {
     shopHeader.textContent = 'Cafe Naples';
     shopHeader.classList.add('cafeName');
 
-    contentContainer.appendChild(header).appendChild(shopHeader);
+    header.appendChild(shopHeader)
+    body.insertBefore(header, document.querySelector('#content'))
 }
 
 export {createHeader}

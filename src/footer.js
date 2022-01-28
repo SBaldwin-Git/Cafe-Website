@@ -1,5 +1,5 @@
 function createFooter() {
-    const contentContainer = document.querySelector('#content');
+    const body = document.querySelector('body');
     const footer = document.createElement('footer');
 
     const footerText = document.createElement('p');
@@ -14,7 +14,7 @@ function createFooter() {
 
     footer.appendChild(footerText);
     footer.appendChild(gitHubLink).appendChild(gitHubLogo);
-    contentContainer.appendChild(footer);
+    body.appendChild(footer);
 }
 
 export {createFooter}
