@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Lato';
 }
 
 header {
@@ -22,6 +23,12 @@ header h1 {
 @font-face {
     font-family: 'Gamaliya';
     src: url('res/Gamaliya-JRBYa.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('res/Lato-Regular.ttf');
     font-style: normal;
 }
 
