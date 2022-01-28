@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createFooter\": () => (/* binding */ createFooter)\n/* harmony export */ });\nfunction createFooter() {\n    const contentContainer = document.querySelector('#content');\n    const footer = document.createElement('footer');\n\n    const footerText = document.createElement('p');\n    footerText.textContent = 'Created by Sam Baldwin';\n\n    const gitHubLogo = document.createElement('img')\n    gitHubLogo.src = '../dist/res/GitHub-Mark-32px.png';\n    gitHubLogo.alt = '';\n\n    const gitHubLink = document.createElement('a');\n    gitHubLink.href = 'https://github.com/SBaldwin-Git/Cafe-Website';\n\n    footer.appendChild(footerText);\n    footer.appendChild(gitHubLink).appendChild(gitHubLogo);\n    contentContainer.appendChild(footer);\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader() {\n    const contentContainer = document.querySelector('#content');\n    const header = document.createElement('header');\n    const shopHeader = document.createElement('h1');\n\n    shopHeader.textContent = 'Cafe Naples';\n    shopHeader.classList.add('cafeName');\n\n    contentContainer.appendChild(header).appendChild(shopHeader);\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader() {\n    const contentContainer = document.querySelector('#content');\n    const header = document.createElement('header');\n    const shopHeader = document.createElement('h1');\n\n    // Home\n    // Menu\n    // Contact\n\n    shopHeader.textContent = 'Cafe Naples';\n    shopHeader.classList.add('cafeName');\n\n    contentContainer.appendChild(header).appendChild(shopHeader);\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/header.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
 
 /***/ })
 

@@ -3,6 +3,10 @@ function createHeader() {
     const header = document.createElement('header');
     const shopHeader = document.createElement('h1');
 
+    // Home
+    // Menu
+    // Contact
+
     shopHeader.textContent = 'Cafe Naples';
     shopHeader.classList.add('cafeName');
 
