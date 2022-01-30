@@ -57,7 +57,7 @@ li {
     font-size: 35px;
 }
 
-li:hover{
+li:hover {
     background-color: rgb(240, 255, 240, 0.2);
 }
 
@@ -96,7 +96,7 @@ footer p {
     margin-right: 5px;
 }
 
-footer a img{
+footer a img {
     height: 20px;
     width: auto;
 }
