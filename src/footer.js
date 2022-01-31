@@ -17,4 +17,6 @@ function createFooter() {
     body.appendChild(footer);
 }
 
-export {createFooter}
+export {
+    createFooter
+}

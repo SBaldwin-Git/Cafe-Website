@@ -1,5 +1,7 @@
-function createContact(){
-    
+function createContact() {
+
 }
 
-export {createContact}
+export {
+    createContact
+}
