@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome(){\n    \n    //TODO LIST\n    //Customer reviews\n    //Your coffee your way? SLOGAN\n    //Opening times and location\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n\n    //TODO LIST\n    //Customer reviews\n    //Your coffee your way? SLOGAN\n    //Opening times and location\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/home.js?");
 
 /***/ }),
 
