@@ -18,6 +18,13 @@
     font-style: normal;
 }
 
+/* BODY */
+
+body {
+    background-image: url(res/pexels-afta-putta-gunawan-683039.jpg);
+    background-size: contain;
+}
+
 /* HEADER & NAVBAR */
 
 header {
@@ -26,13 +33,14 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(240, 255, 240, 0.6);
-    /* opacity: 0.6; */
+    /* background-color: rgb(240, 255, 240, 0.6); */
+    background-color: rgba(19, 19, 19, 0.7);
     height: 130px;
 }
 
 header h1 {
     min-width: 100%;
+    color: whitesmoke;
     padding-top: 1%;
     margin-bottom: 0.5%;
     font-family: 'Gamaliya';
@@ -50,7 +58,7 @@ ul {
 
 li {
     display: inline;
-    border-right: 3px solid black;
+    border-right: 3px solid whitesmoke;
     padding-bottom: 5px;
     padding-left: 50px;
     padding-right: 50px;
@@ -62,14 +70,23 @@ li:last-child {
 }
 
 a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 
-body {
-    background-image: url(res/pexels-afta-putta-gunawan-683039.jpg);
-    background-size: contain;
+/* HOME CONTENT */
+
+.sloganContainer{
+    background-color: white;
 }
+
+.sloganText{
+    font-size: 40px;
+}
+
+/* MENU CONTENT */
+
+/* CONTACT CONTENT */
 
 /* FOOTER */
 
@@ -82,8 +99,8 @@ footer {
     font-size: 16px;
     margin-top: 1%;
     padding-top: 8px;
-    background-color: honeydew;
-    opacity: 0.6;
+    color: whitesmoke;
+    background-color: rgba(19, 19, 19, 0.7);
     position: absolute;
     bottom: 0;
 }

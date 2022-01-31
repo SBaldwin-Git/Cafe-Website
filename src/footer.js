@@ -6,7 +6,7 @@ function createFooter() {
     footerText.textContent = 'Created by Sam Baldwin';
 
     const gitHubLogo = document.createElement('img')
-    gitHubLogo.src = '../dist/res/GitHub-Mark-32px.png';
+    gitHubLogo.src = '../dist/res/GitHub-Mark-Light-32px.png';
     gitHubLogo.alt = '';
 
     const gitHubLink = document.createElement('a');

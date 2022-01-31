@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createFooter\": () => (/* binding */ createFooter)\n/* harmony export */ });\nfunction createFooter() {\n    const body = document.querySelector('body');\n    const footer = document.createElement('footer');\n\n    const footerText = document.createElement('p');\n    footerText.textContent = 'Created by Sam Baldwin';\n\n    const gitHubLogo = document.createElement('img')\n    gitHubLogo.src = '../dist/res/GitHub-Mark-32px.png';\n    gitHubLogo.alt = '';\n\n    const gitHubLink = document.createElement('a');\n    gitHubLink.href = 'https://github.com/SBaldwin-Git/Cafe-Website';\n\n    footer.appendChild(footerText);\n    footer.appendChild(gitHubLink).appendChild(gitHubLogo);\n    body.appendChild(footer);\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createFooter\": () => (/* binding */ createFooter)\n/* harmony export */ });\nfunction createFooter() {\n    const body = document.querySelector('body');\n    const footer = document.createElement('footer');\n\n    const footerText = document.createElement('p');\n    footerText.textContent = 'Created by Sam Baldwin';\n\n    const gitHubLogo = document.createElement('img')\n    gitHubLogo.src = '../dist/res/GitHub-Mark-Light-32px.png';\n    gitHubLogo.alt = '';\n\n    const gitHubLink = document.createElement('a');\n    gitHubLink.href = 'https://github.com/SBaldwin-Git/Cafe-Website';\n\n    footer.appendChild(footerText);\n    footer.appendChild(gitHubLink).appendChild(gitHubLogo);\n    body.appendChild(footer);\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/footer.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n\n    //TODO LIST\n    //Customer reviews\n    //Your coffee your way? SLOGAN\n    //Opening times and location\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n\n    const content = document.getElementById('#content');\n\n    //TODO LIST\n    //Customer reviews\n    //Your coffee your way? SLOGAN\n    //Opening times and location\n}\n\nfunction createSlogan(){\n\n    const sloganDiv = document.createElement('div');\n    const sloganText = document.createElement('h2');\n\n    sloganDiv.classList.add('sloganContainer');\n    sloganText.classList.add('sloganText');\n\n    sloganText.textContent = 'FRESHLY BREWED COFFEE, YOUR WAY, EVERYDAY';\n\n    sloganDiv.appendChild(sloganText);\n\n    return sloganDiv;\n}\n\nfunction createReview(){\n\n}\n\nfunction createOpeningTimes(){\n\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/home.js?");
 
 /***/ }),
 
