@@ -25,6 +25,13 @@ body {
     background-size: contain;
 }
 
+#content{
+    height: 75%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* background-color:rgb(128, 0, 21, 0.9); */
+}
+
 /* HEADER & NAVBAR */
 
 header {
@@ -77,10 +84,11 @@ a {
 /* HOME CONTENT */
 
 .sloganContainer{
-    background-color: white;
+    background-color: rgb(245, 245, 245, 0.9);
 }
 
 .sloganText{
+    color: rgba(19, 19, 19, 1);
     font-size: 40px;
 }
 
