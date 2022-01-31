@@ -18,6 +18,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('res/BebasNeue-Regular.ttf');
+    font-style: normal;
+}
+
 /* BODY */
 
 body {
@@ -25,11 +31,13 @@ body {
     background-size: contain;
 }
 
-#content{
+#content {
+    display: flex;
+    justify-content: center;
     height: 75%;
     margin-top: 2%;
     margin-bottom: 2%;
-    /* background-color:rgb(128, 0, 21, 0.9); */
+    background-color: rgb(245, 245, 245, 0.4);
 }
 
 /* HEADER & NAVBAR */
@@ -40,7 +48,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: rgb(240, 255, 240, 0.6); */
     background-color: rgba(19, 19, 19, 0.7);
     height: 130px;
 }
@@ -83,13 +90,15 @@ a {
 
 /* HOME CONTENT */
 
-.sloganContainer{
-    background-color: rgb(245, 245, 245, 0.9);
+.sloganContainer {
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
-.sloganText{
+.sloganText {
     color: rgba(19, 19, 19, 1);
-    font-size: 40px;
+    font-size: 70px;
+    font-family: 'Bebas Neue';
 }
 
 /* MENU CONTENT */

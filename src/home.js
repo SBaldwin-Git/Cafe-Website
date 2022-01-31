@@ -1,10 +1,12 @@
 function createHome() {
 
-    const content = document.getElementById('#content');
+    const content = document.getElementById('content');
 
     //TODO LIST
     //Customer reviews
     //Opening times and location
+
+    content.appendChild(createSlogan());
 }
 
 function createSlogan(){
