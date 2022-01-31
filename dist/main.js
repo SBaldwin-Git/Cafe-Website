@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader() {\n    const body = document.querySelector('body');\n    const header = document.createElement('header');\n    const shopHeader = document.createElement('h1');\n\n    const navBar = document.createElement('ul');\n    const navHome = document.createElement('li');\n    const navMenu = document.createElement('li');\n    const navConact = document.createElement('li');\n\n    const navHomeAnchor = document.createElement('a');\n    const navMenuAnchor = document.createElement('a');\n    const navContactAnchor = document.createElement('a');\n\n    navHomeAnchor.href = '';\n    navMenuAnchor.href = '';\n    navContactAnchor.href = '';\n\n    navHomeAnchor.textContent = 'Home';\n    navMenuAnchor.textContent = 'Menu';\n    navContactAnchor.textContent = 'Contact';\n    shopHeader.textContent = 'Cafe Naples';\n    shopHeader.classList.add('cafeName');\n\n    navBar.appendChild(navHome).appendChild(navHomeAnchor);\n    navBar.appendChild(navMenu).appendChild(navMenuAnchor);\n    navBar.appendChild(navConact).appendChild(navContactAnchor);\n\n    header.appendChild(shopHeader);\n    header.appendChild(navBar);\n    body.insertBefore(header, document.querySelector('#content'));\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader() {\n    const body = document.querySelector('body');\n    const header = document.createElement('header');\n\n\n    header.appendChild(createHeading());\n    header.appendChild(createNavBar());\n    body.insertBefore(header, document.querySelector('#content'));\n}\n\nfunction createHeading() {\n    const shopHeader = document.createElement('h1');\n\n    shopHeader.textContent = 'Cafe Naples';\n    shopHeader.classList.add('cafeName');\n\n    return shopHeader;\n}\n\nfunction createNavBar() {\n\n    const navBar = document.createElement('ul');\n    const navHome = document.createElement('li');\n    const navMenu = document.createElement('li');\n    const navConact = document.createElement('li');\n\n    const navHomeAnchor = document.createElement('a');\n    const navMenuAnchor = document.createElement('a');\n    const navContactAnchor = document.createElement('a');\n\n    navHomeAnchor.href = '';\n    navMenuAnchor.href = '';\n    navContactAnchor.href = '';\n\n    navHomeAnchor.textContent = 'Home';\n    navMenuAnchor.textContent = 'Menu';\n    navContactAnchor.textContent = 'Contact';\n\n    navBar.appendChild(navHome).appendChild(navHomeAnchor);\n    navBar.appendChild(navMenu).appendChild(navMenuAnchor);\n    navBar.appendChild(navConact).appendChild(navContactAnchor);\n\n    return navBar;\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome(){\n    \n    //TODO LIST\n    //Customer reviews\n    //Your coffee your way? SLOGAN\n    //Opening times and location\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/home.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n(0,_home__WEBPACK_IMPORTED_MODULE_2__.createHome)();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
 
 /***/ })
 
