@@ -29,6 +29,7 @@
 body {
     background-image: url(res/pexels-afta-putta-gunawan-683039.jpg);
     background-size: contain;
+    overflow: hidden;
 }
 
 #content {
@@ -38,7 +39,6 @@ body {
     align-items: center;
     height: 75%;
     margin-top: 2%;
-    margin-bottom: 2%;
     background-color: rgb(200, 200, 200, 0.3);
 }
 
@@ -49,7 +49,6 @@ body {
     text-align: center;
     width: 100%;
     height: 80px;
-    margin-top: 0.5%;
 }
 
 .sloganText {
@@ -136,9 +135,32 @@ li:last-child {
 a {
     color: whitesmoke;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* MENU CONTENT */
+
+.menuDiv {
+    width: 30%;
+    height: 600px;
+}
+
+.menuItem {
+    font-size: 16px;
+}
+
+.itemName{
+    font-weight: bold;
+
+}
+
+.itemDesc{
+font-size: 10px;
+}
+
+.itemPrice{
+    font-weight: bolder;
+}
 
 /* CONTACT CONTENT */
 
@@ -150,8 +172,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    margin-top: 0.5%;
+    font-size: 14px;
     color: whitesmoke;
     background-color: rgba(19, 19, 19, 0.7);
     position: absolute;
@@ -159,7 +180,7 @@ footer {
 }
 
 footer p {
-    margin-top: 8px;
+    margin-top: 11px;
     margin-right: 5px;
 }
 
