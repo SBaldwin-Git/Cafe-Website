@@ -1,3 +1,13 @@
+import {
+    createHome
+} from "./home";
+import {
+    createMenu
+} from "./menu";
+import {
+    createContact
+} from "./contact";
+
 function createHeader() {
     const body = document.querySelector('body');
     const header = document.createElement('header');
@@ -28,13 +38,17 @@ function createNavBar() {
     const navMenuAnchor = document.createElement('a');
     const navContactAnchor = document.createElement('a');
 
-    navHomeAnchor.href = '';
-    navMenuAnchor.href = '';
-    navContactAnchor.href = '';
-
     navHomeAnchor.textContent = 'Home';
     navMenuAnchor.textContent = 'Menu';
     navContactAnchor.textContent = 'Contact';
+
+    navHomeAnchor.addEventListener('click', function() {
+        createHome();
+    });
+
+    navMenuAnchor.addEventListener('click', function() {
+        createMenu();
+    });
 
     navBar.appendChild(navHome).appendChild(navHomeAnchor);
     navBar.appendChild(navMenu).appendChild(navMenuAnchor);

@@ -2,8 +2,9 @@ function createHome() {
 
     const content = document.getElementById('content');
 
-    //Customer reviews
-    //Opening times and location
+    while (content.firstChild) {
+        content.firstChild.remove()
+    }
 
     content.appendChild(createSlogan());
     content.appendChild(createReview());
@@ -56,7 +57,7 @@ function createReview() {
     reviewContainer1.appendChild(reviewText1);
     reviewContainer2.appendChild(reviewText2);
     reviewContainer3.appendChild(reviewText3);
-    
+
     reviewContainer1.appendChild(reviewScore1);
     reviewContainer2.appendChild(reviewScore2);
     reviewContainer3.appendChild(reviewScore3);
