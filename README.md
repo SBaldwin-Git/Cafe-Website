@@ -8,6 +8,13 @@ Created using:
 - JavaScript
 - Webpack
 
+# Learning Outcomes
+
+- Introduction to Webpack
+- JavaScript modules
+- Managing a project directory
+- Creating a website almost entirely using JavaScript
+
 # The Odin Project
 
 I created this website as part of The Odin Project Fullstack JavaScript course in order to learn about Webpack and put into practise creating webpages using modules.
