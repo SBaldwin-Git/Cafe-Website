@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContact\": () => (/* binding */ createContact)\n/* harmony export */ });\nfunction createContact() {\n\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContact\": () => (/* binding */ createContact)\n/* harmony export */ });\nfunction createContact() {\n    const content = document.getElementById('content');\n\n    while (content.firstChild) {\n        content.firstChild.remove()\n    };\n\n    content.appendChild(createOpeningTimes());\n    content.appendChild(createContactDetails());\n}\n\nfunction createOpeningTimes() {\n    const openingTimesContainer = document.createElement('div');\n    const openingTimesHeader = document.createElement('h2');\n\n    return openingTimesContainer;\n}\n\nfunction createContactDetails() {\n    const contactDetailsContainer = document.createElement('div');\n    const contactDetailsHeader = document.createElement('h2');\n\n\n    return contactDetailsContainer;\n}\n\n\n\n//# sourceURL=webpack://restaurant_odin/./src/contact.js?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n(0,_home__WEBPACK_IMPORTED_MODULE_2__.createHome)();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\n\n\n(0,_header__WEBPACK_IMPORTED_MODULE_0__.createHeader)();\n// createHome();\n(0,_contact__WEBPACK_IMPORTED_MODULE_3__.createContact)();\n(0,_footer__WEBPACK_IMPORTED_MODULE_1__.createFooter)();\n\n//# sourceURL=webpack://restaurant_odin/./src/index.js?");
 
 /***/ }),
 
