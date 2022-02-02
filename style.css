@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    height: 100%;
     font-family: 'Lato';
+}
+
+html, body{
+    height: 100%;
 }
 
 @font-face {
@@ -37,7 +39,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 75%;
+    height: 700px;
     margin-top: 2%;
     background-color: rgb(200, 200, 200, 0.3);
 }
@@ -98,7 +100,7 @@ header {
     align-items: center;
     text-align: center;
     background-color: rgba(19, 19, 19, 0.7);
-    height: 130px;
+    height: 150px;
 }
 
 header h1 {
@@ -149,16 +151,16 @@ a {
     font-size: 16px;
 }
 
-.itemName{
+.itemName {
     font-weight: bold;
 
 }
 
-.itemDesc{
-font-size: 10px;
+.itemDesc {
+    font-size: 10px;
 }
 
-.itemPrice{
+.itemPrice {
     font-weight: bolder;
 }
 
@@ -180,12 +182,10 @@ footer {
 }
 
 footer p {
-    margin-top: 11px;
     margin-right: 5px;
 }
 
 footer a img {
-    margin-top: 4px;
     height: 20px;
     width: auto;
 }
