@@ -72,7 +72,7 @@ function createReview() {
 function createImg() {
 
     const coffeeImg = document.createElement('img');
-    coffeeImg.src = '../dist/res/pexels-ekrulila-2128109.jpg';
+    // coffeeImg.src = '../dist/res/pexels-ekrulila-2128109.jpg';
     coffeeImg.classList.add('homeImg');
 
     return coffeeImg;
