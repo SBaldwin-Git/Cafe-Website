@@ -21,6 +21,12 @@ html, body{
 }
 
 @font-face {
+    font-family: 'Lato Bold';
+    src: url('res/Lato-Bold.ttf');
+    font-style:normal;
+}
+
+@font-face {
     font-family: 'Bebas Neue';
     src: url('res/BebasNeue-Regular.ttf');
     font-style: normal;
@@ -106,7 +112,6 @@ header {
 header h1 {
     min-width: 100%;
     color: whitesmoke;
-    padding-top: 1%;
     margin-bottom: 0.5%;
     font-family: 'Gamaliya';
     font-size: 60px;
@@ -143,25 +148,45 @@ a {
 /* MENU CONTENT */
 
 .menuDiv {
-    width: 30%;
-    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    height: 80%;
+    gap: 20px;
+    padding: 3%;
+    padding-top: 1%;
+    border: 4px solid rgba(19, 19, 19, 0.8);
+    background-color: rgb(245, 245, 245, 0.5);
+        text-align: center;
+}
+
+.menuDiv h2{
+    font-family: 'Lato Bold';
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .menuItem {
-    font-size: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
 }
 
 .itemName {
     font-weight: bold;
+    font-size: 30px;
 
 }
 
 .itemDesc {
-    font-size: 10px;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .itemPrice {
     font-weight: bolder;
+    font-size: 20px;
 }
 
 /* CONTACT CONTENT */
