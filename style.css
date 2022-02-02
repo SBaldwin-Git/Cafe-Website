@@ -95,6 +95,7 @@ body {
 }
 
 .homeImg {
+    content:url('res/pexels-ekrulila-2128109.jpg');
     object-fit: cover;
     width: 505px;
     height: 505px;
