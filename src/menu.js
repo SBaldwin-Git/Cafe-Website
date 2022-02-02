@@ -7,7 +7,7 @@ function createMenu() {
     }
 
     content.appendChild(createDrinksMenu());
-    // content.appendChild(createFoodMenu());
+    content.appendChild(createFoodMenu());
 }
 
 function createDrinksMenu() {
@@ -36,10 +36,24 @@ function createDrinksMenu() {
 
 function createFoodMenu() {
     const foodContainer = document.createElement('div');
+    const foodHeader = document.createElement('h2');
 
     foodContainer.classList.add('menuDiv');
+    foodHeader.textContent = 'Breakfast Menu';
+    foodContainer.appendChild(foodHeader);
 
-    // const jeff = personFactory('jeff', 27);
+    const foodList = [
+        menuItemFactory('Croissant', 'A single freshly baked croissant.', '1.00'),
+        menuItemFactory('Breakfast Wrap', 'Tortilla wrap filled with bacon, scrambled egg and sausage.', '2.50'),
+        menuItemFactory('Full English', '2 rashers of bacon, 2 sausages,1 friend egg, baked beans, grilled tomatoes mushrooms', '3.25'),
+        menuItemFactory('Vegan Full English', '2 rashers of vegan bacon, 2 quorn sausages, baked beans, grilled tomatoes mushrooms.', '3.00'),
+        menuItemFactory('Beans on Toast', '2 slices of buttered toast with baked beans on top', '1.50')
+    ];
+
+    for (let index = 0; index < foodList.length; index++) {
+        foodList[index].classList.add('menuItem');
+        foodContainer.appendChild(foodList[index]);
+    }
 
     return foodContainer;
 }
