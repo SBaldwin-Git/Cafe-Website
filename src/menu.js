@@ -15,15 +15,15 @@ function createDrinksMenu() {
     drinksContainer.classList.add('menuDiv');
 
     const drinksList = [
-        americano = menuItemFactory('Americano', 'A black coffee with 2 shots of espresso', '2.50'),
-        espresso = menuItemFactory('espresso', 'A single shot of espresso coffee', '1.80'),
-        cappuccino = menuItemFactory('Cappuccino', 'Single espresso shot with milk foam', '2.00'),
-        latte = menuItemFactory('Latte', 'A single shot of espresso topped with milk', '2.60'),
-        mocha = menuItemFactory('Mocha', 'A single shot of espresso topped with milk and chocolate', '2.75')
+        menuItemFactory('Americano', 'A black coffee with 2 shots of espresso', '2.50'),
+        menuItemFactory('espresso', 'A single shot of espresso coffee', '1.80'),
+        menuItemFactory('Cappuccino', 'Single espresso shot with milk foam', '2.00'),
+        menuItemFactory('Latte', 'A single shot of espresso topped with milk', '2.60'),
+        menuItemFactory('Mocha', 'A single shot of espresso topped with milk and chocolate', '2.75')
     ];
 
     for (let index = 0; index < drinksList.length; index++) {
-        drinksContainer.appendChild(drinksList[index]); 
+        drinksContainer.appendChild(drinksList[index]);
     }
 
     return drinksContainer;
