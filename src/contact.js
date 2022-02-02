@@ -13,16 +13,17 @@ function createOpeningTimes() {
     const openingTimesContainer = document.createElement('div');
     const openingTimesHeader = document.createElement('h2');
     const addressHeader = document.createElement('h2');
+    openingTimesContainer.classList.add('contactDetailsContainer')
 
     //Address
     addressHeader.textContent = 'Where to find us:';
     const addressContainer = document.createElement('ul');
     const addressArray = [
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p')
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li')
     ];
 
     addressArray[0].textContent = 'Cafe Naples';
@@ -42,13 +43,13 @@ function createOpeningTimes() {
     openingTimesHeader.textContent = 'Opening times:';
     const openingTimesListContainer = document.createElement('ul');
     const openingTimesArray = [
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p'),
-        document.createElement('li').createElement('p')
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li'),
+        document.createElement('li')
     ];
 
     openingTimesArray[0].textContent = 'Mon: 07:00 - 20:00';

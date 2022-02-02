@@ -1,12 +1,6 @@
-import {
-    createHome
-} from "./home";
-import {
-    createMenu
-} from "./menu";
-import {
-    createContact
-} from "./contact";
+import {createHome} from "./home";
+import {createMenu} from "./menu";
+import {createContact} from "./contact";
 
 function createHeader() {
     const body = document.querySelector('body');
@@ -48,6 +42,10 @@ function createNavBar() {
 
     navMenuAnchor.addEventListener('click', function() {
         createMenu();
+    });
+
+    navContactAnchor.addEventListener('click', function() {
+        createContact();
     });
 
     navBar.appendChild(navHome).appendChild(navHomeAnchor);
